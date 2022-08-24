@@ -1,0 +1,33 @@
+# course-apache-spark-scala
+
+# User-specific stuff:
+module_scala/.idea/**/workspace.xml
+module_scala/.idea/**/tasks.xml
+module_scala/.idea/dictionaries
+
+# Sensitive or high-churn files:
+module_scala/.idea/**/dataSources/
+module_scala/.idea/**/codeStyles/
+module_scala/.idea/**/dataSources.ids
+module_scala/.idea/**/dataSources.xml
+module_scala/.idea/**/dataSources.local.xml
+module_scala/.idea/**/sqlDataSources.xml
+module_scala/.idea/**/dynamic.xml
+module_scala/.idea/**/uiDesigner.xml
+module_scala/.idea/**/scala_compiler.xml
+module_scala/.idea/**/jarRepositories.xml
+module_scala/.idea/**/compiler.xml
+module_scala/.idea/**/vcs.xml
+
+# Gradle:
+module_scala/.idea/**/gradle.xml
+module_scala/.idea/**/libraries
+
+*.iws
+
+module_scala/.idea/*
+module_scala/.idea
+
+
+
+module_scala/target/
