@@ -29,5 +29,6 @@ module_scala/.idea/*
 module_scala/.idea
 
 
-
+module_scala/target/*
 module_scala/target/
+module_scala/target
