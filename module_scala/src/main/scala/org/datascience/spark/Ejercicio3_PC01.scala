@@ -5,7 +5,9 @@ object Ejercicio3_PC01 {
   def main(args: Array[String]): Unit = {
 
     val ABECEDARIO = "abcdefghijklmnopqrstuvwxyz"
+
     val textoInicial: String = "middle"
+
     val rotation: Int = 2
 
     val arrayLettras: Array[String] = textoInicial

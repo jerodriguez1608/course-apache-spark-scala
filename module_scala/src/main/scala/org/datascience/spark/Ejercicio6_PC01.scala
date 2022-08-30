@@ -9,6 +9,7 @@ object Ejercicio6_PC01 {
   def main(args: Array[String]): Unit = {
 
     val date = LocalDateTime.now
+
     val localDateTime = DateTimeFormatter.ofPattern("dd 'de' MMMM 'del' yyyy 'a las' HH 'y' mm 'minutos'")
 
 

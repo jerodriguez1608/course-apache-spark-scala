@@ -11,9 +11,13 @@ object Ejercicio7_PC01 {
   def main(args: Array[String]): Unit = {
 
     val formato = DateTimeFormatter.ofPattern("dd/MM/yyyy")
+
     val fecha = LocalDate.parse("06/07/2016", formato)
+
     val mayorq = LocalDate.parse("01/01/1900", formato)
+
     val UltimaCopa = LocalDate.parse("15/07/2018", formato)
+
 
 
     if (fecha.isAfter(mayorq)) {
