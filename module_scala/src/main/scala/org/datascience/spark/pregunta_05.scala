@@ -4,6 +4,10 @@ object pregunta_05 {
 
   def main(args: Array[String]): Unit = {
 
+    def main(args: Array[String]): Unit = {
+
+    }
+
   }
 
 }
