@@ -5,14 +5,30 @@ object pregunta_04 {
   def main(args: Array[String]): Unit = {
 
     val title1 : Array[String] = "hello".split("")
-    val title2 : Array[String] = "whorld".split("")
+    val title2 : Array[String] = "world".split("")
 
-    title1
-      .map(world =>{
-        val newWorld=world.filter(_ == 'h')
-        newWorld
-      })
-      .foreach(println)
+    var resultYES: String = ""
+    var resultNO: String = ""
+
+
+    for (world <- title1){
+      //println(world)
+        for (world2 <- title2) {
+          //println(world2)
+
+          if (world == world2) {
+            resultYES = "yes"
+          } else {
+            resultNO = "no"
+          }
+        }
+    }
+
+    if (resultYES == "yes") {
+      println("YES")
+    }else {
+      println("NO")
+    }
 
   }
 
