@@ -28,7 +28,10 @@ object ContarLetrasLista {
        * )
        */
       .flatMap(arrayLetras => arrayLetras)
-      .groupBy(key => key)
+      // Array (a,b,c,a,o,e,d)
+      // Array (key,ObjA) (key2, ObjB) (key, ObjC)  ----
+      // Array (key -> List(ObjA, ObjC) , key2 -> List(ObjB))
+      .groupBy(key => key) // a -> List(a, a) , b -> List(b,b,b)
       .map(tuple => (tuple._1, tuple._2.length))
       .foreach(
         arrayLetras => println(arrayLetras)
