@@ -1,6 +1,6 @@
 package org.datascience.spark
 
-object pregunta_03 {
+object dpregunta_03 {
 
   def main(args: Array[String]): Unit = {
 

@@ -1,9 +1,7 @@
 package ejercicio11
 
-import com.dataengineer.scala.taller01.entities.{Customer, Order, Product}
 
 import java.time.LocalDate
-
 
 object DataDemo {
 
