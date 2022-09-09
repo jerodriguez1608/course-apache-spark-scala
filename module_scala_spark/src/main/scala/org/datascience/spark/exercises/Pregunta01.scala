@@ -53,7 +53,7 @@ object Pregunta01 {
     spark.sparkContext.setLogLevel("ERROR")
 
     val df = spark.read
-      .json("C:\\workspace\\scala\\science_research\\course-apache-spark-scala\\module_scala_spark\\src\\main\\resources\\data\\cars.json")
+      .json(PATH.CARS_PATH_URL)
 
     df.printSchema()
     df.show(false)
