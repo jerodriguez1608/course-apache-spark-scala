@@ -29,7 +29,9 @@ object Pregunta03 {
 
    1. Mostrar un dataframe con todas las personas que tengan una guitarra de tipo Electric o sus derivados
    2. Agrupar por tipo de guitarra y mostrar cuantas personas tiene ese tipo de guitarra,
-    Ejemplo: Eletric , 3 ...
+    Ejemplo:
+    Eletric , 3
+    ...
    3. Agrupar por tipo de guitarra y mostrar  las persona y el modelo de guitarra que tienen , ejemplo:
    +----------------------+---+-------+------------+
     |guitarType            |person_model|

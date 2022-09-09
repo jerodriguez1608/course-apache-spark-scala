@@ -35,6 +35,7 @@ object Pregunta01 {
 
    3. Agrupar y listar los carros que tengan el mismo HorsePower y renombrar las columnas obtenidas
       con un nombre de facil entendimiento.
+
   Ejemplo
   +------------+---------+------------+----------
   |Horsepower|Name

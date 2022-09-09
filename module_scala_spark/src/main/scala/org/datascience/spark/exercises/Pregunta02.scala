@@ -31,7 +31,9 @@ object Pregunta02 {
 
    1. Retornar cuantas bandas hay por ciudad(hometown)
 
-   Output Dataframe:: Lima | 3 Lima | 4
+   Output Dataframe::
+    Lima | 3
+    Lima | 4
 
    2. Retornar las bandas con mas de 50 anios de antiguedad
       y renombrar sus columnas a espaniol
