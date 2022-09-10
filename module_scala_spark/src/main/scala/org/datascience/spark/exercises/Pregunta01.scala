@@ -2,7 +2,7 @@ package org.datascience.spark.exercises
 
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
-
+import org.apache.spark.sql.functions._
 object Pregunta01 {
   Logger.getLogger("org").setLevel(Level.OFF)
   Logger.getLogger("akka").setLevel(Level.OFF)
@@ -49,7 +49,7 @@ object Pregunta01 {
       .master("local[1]")
       .appName("Pregunta01")
       .getOrCreate()
-
+    import spark.implicits._
     spark.sparkContext.setLogLevel("ERROR")
 
     val df = spark.read
