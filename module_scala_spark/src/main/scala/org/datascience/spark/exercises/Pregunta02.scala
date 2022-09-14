@@ -38,14 +38,11 @@ object Pregunta02 {
    * Lima | 3
    * Lima | 4
    *
-   * 2. Retornar las bandas con mas de 50 anios de antiguedad
-   * y renombrar sus columnas a espaniol
+
    *
-   * 3. Agregar una columna adicional de nombre NEWCOLUMN_1 y retornar VERDAD o MENTIRA si
-   * la banda tiene mas de 10 letras
    *
-   * 3. Agregar una columna adicional de nombre NEWCOLUMN_2 y retornar NUEVA o ANTIGUA O MUY ANTIGUA si
-   * la banda  tiene menos de menos 40,  menos 50 o mas 50 anios respectivamente
+   *
+
    *
    */
   def main(args: Array[String]): Unit = {
@@ -65,15 +62,24 @@ object Pregunta02 {
     df.printSchema()
     df.show(false)
 
-    val dfModificado = df
-      .withColumn("NEWCOLUMN_1",
-        when(length($"name") > 10, lit("VERDAD"))
-          //        .when( length($"name") > 12, lit("VERDAD 2") )
-          .otherwise(lit("FALSE"))
+    df
+      .withColumn("NEWCOLUMN_2",
+        when(lit(2022) - $"year" < 40, lit("NUEVA"))
+          .when(lit(2022) - $"year" < 50, lit("SEMI NUEVA"))
+          .when(lit(2022) - $"year" < 60, lit("ANTIGUA"))
+          .otherwise(lit("UNDEFINED"))
       )
+      .show(false)
 
-    df.printSchema()
-    dfModificado.show(false)
+    //    val dfModificado = df
+    //      .withColumn("NEWCOLUMN_1",
+    //        when(length($"name") > 10, lit("VERDAD"))
+    //          //        .when( length($"name") > 12, lit("VERDAD 2") )
+    //          .otherwise(lit("FALSE"))
+    //      )
+    //
+    //    df.printSchema()
+    //    dfModificado.show(false)
 
 
   }
