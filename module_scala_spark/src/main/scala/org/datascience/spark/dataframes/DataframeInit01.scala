@@ -2,6 +2,7 @@ package org.datascience.spark.dataframes
 
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.sql.types.{ArrayType, IntegerType, StringType, StructType}
 
 object DataframeInit01 {
 
@@ -18,6 +19,14 @@ object DataframeInit01 {
     spark.sparkContext.setLogLevel("ERROR")
 
     import spark.implicits._ // ES IMPORTANTE , NO OLVIDAR
+
+    val schema =
+      new StructType()
+        .add("hometown", StringType)
+        .add("id", IntegerType)
+        .add("name", StringType)
+        .add("year", IntegerType)
+
 
     val dataframe = spark.sparkContext.parallelize(
       Seq(

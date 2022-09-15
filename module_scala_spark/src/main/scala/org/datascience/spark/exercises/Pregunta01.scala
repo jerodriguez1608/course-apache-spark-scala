@@ -43,8 +43,7 @@ object Pregunta01 {
     import spark.implicits._
     spark.sparkContext.setLogLevel("ERROR")
 
-    val df = spark.read
-      .json(PATH.CARS_PATH_URL)
+    val df = spark.read.json(PATH.CARS_PATH_URL)
     //
     //    df.printSchema()
     //    df.show(false)
