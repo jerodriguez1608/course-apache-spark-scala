@@ -17,9 +17,16 @@
         <scala.maven.plugin.version>4.0.0</scala.maven.plugin.version>
         <scala.logging.version>3.9.3</scala.logging.version>
         <typesafe.version>1.4.1</typesafe.version>
+        <delta.version>1.0.0</delta.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>io.delta</groupId>
+            <artifactId>delta-core_2.12</artifactId>
+            <version>${delta.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.scala-lang</groupId>
