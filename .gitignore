@@ -66,3 +66,7 @@ module_scala_spark/.idea
 module_scala_spark/target/*
 module_scala_spark/target/
 module_scala_spark/target
+
+
+module_python_pyspark/venv
+module_python_pyspark/venv/*
