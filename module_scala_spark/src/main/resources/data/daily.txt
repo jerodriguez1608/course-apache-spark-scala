@@ -1,0 +1,19 @@
+podrías poner las plantillas y automatizaciones que has hecho ,
+ como ese script para crear las carpetitas y darles acl , y ahorrará tiempo
+- - - - - . . . .
+ qué logre?
+ 1. Crear plantillas/librerias para ingestar data que tengan el mismo origen y destino.
+ Ejemplo: Leer Data desde BigQuery Google Cloud y escribir en tablas Deltas en Azure mediante Databricks.
+ 2. Crear Servicios Rest para descargar la fuente de los Banners del aplicativo YAPE que estan en DatoCMS 
+ 3. Cargar la data de Taggeo de BigQuery schedularizada en 3 partes: A Demanda, Diaria y cada hora
+ 4. Desarrollar la logica que permite recrear todo el historico en base a Fechas/Horas que permite tener todos
+ los movimientos ocurridos desde el inicio de carga hasta el momento de ejecución.
+ 5. Desarrollar código POWERSHELL que nos permite automatizar la creación de carpetas en los Storages Gen2 y ponerle
+ los permisos ACL de un Service Principal en especifico también nos permite llamar secretos de un KeyVault.
+ 6. Apoyo en la construcción de la Plantilla de Kafka Consumer 
+ , , , , ,  , , , , ,
+ cómo lo logre?
+ Logre estas implementaciones, desarrollos y factorización , viendo oportunidades de mejora en cada
+ asignación o tarea que me tocaba en el sprint, luego lo conversaba con mi LT y me daban tiempo para poder
+ aplicarlos, las herramientas que mas use fueron , Databricks, Scala, Spark, Delta Table, BigQuery, Azure Cloud,
+ Patrones de Desarrollo , Intellij Id, Postman

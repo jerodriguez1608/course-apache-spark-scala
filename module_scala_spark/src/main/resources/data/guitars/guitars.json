@@ -1,7 +1,5 @@
-{"id":0,"model":"EDS-1275","person":"Gibson","guitarType":"Electric double-necked"}
-{"id":10,"model":"EDS-1344","person":"John","guitarType":"Electric double-necked"}
-{"id":5,"model":"Stratocaster","person":"Fender","guitarType":"Electric"}
-{"id":1,"model":"SG","person":"Gibson","guitarType":"Electric"}
-{"id":2,"model":"914","person":"Taylor","guitarType":"Acoustic"}
-{"id":3,"model":"980","person":"Ishanna","guitarType":"Acoustic"}
-{"id":3,"model":"M-II","person":"ESP","guitarType":"Electric"}
+{"id":0,"model":"EDS-1275","make":"Gibson","guitarType":"Electric double-necked", "idBanda": 5}
+{"id":5,"model":"Stratocaster","make":"Fender","guitarType":"Electric", "idBanda": 2}
+{"id":1,"model":"SG","make":"Gibson","guitarType":"Electric", "idBanda": 4}
+{"id":2,"model":"914","make":"Taylor","guitarType":"Acoustic", "idBanda": 34}
+{"id":3,"model":"M-II","make":"ESP","guitarType":"Electric", "idBanda": 1}
