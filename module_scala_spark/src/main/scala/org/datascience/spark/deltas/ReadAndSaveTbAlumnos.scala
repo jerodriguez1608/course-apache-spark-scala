@@ -4,7 +4,7 @@ import io.delta.tables.DeltaTable
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.datascience.spark.DbColegio._
-
+import org.apache.spark.sql.functions._
 import java.time.LocalDateTime
 import javax.xml.crypto.Data
 
@@ -40,14 +40,14 @@ object ReadAndSaveTbAlumnos {
       .whenMatched(
         "m.ciclo <> in.ciclo or m.alumno <> in.alumno or m.promedio <> in.promedio"
       )
-      .updateExpr(
+      .update(
         Map(
-          "dni" -> "in.dni",
-          "alumno" -> "in.alumno",
-          "ciclo" -> "in.ciclo",
-          "promedio" -> "in.promedio",
-          "creationDate" -> "m.creationDate",
-          "updateDate" -> "in.updateDate"
+          "dni" -> lit("in.dni"),
+          "alumno" ->  lit("in.alumno") ,
+          "ciclo" -> lit("in.ciclo") ,
+          "promedio" -> lit("in.promedio") ,
+          "creationDate" -> lit("m.creationDate") ,
+          "updateDate" -> lit("in.updateDate")
         )
       )
       .whenNotMatched(

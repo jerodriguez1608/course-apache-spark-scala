@@ -7,10 +7,9 @@ object CreateTableDelta extends SparkInit with GlobalPath {
 
   def main(args: Array[String]): Unit = {
 
-//    createTableDelta()
+//   createTableDelta()
 
-    DeltaTable.forPath(PATH_DELTA_CALORIAS).toDF.show()
-
+    DeltaTable.forPath(PATH_DELTA_CALORIAS).toDF.show(100)
   }
 
 
